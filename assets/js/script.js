@@ -14,12 +14,29 @@ tabs.forEach(tab => {
     });
 });
 
-/*var slides=document.getElementsByClassName('gallery-photo')
-for(child of slides){
-  child.addEventListener('click', function(){
-    console.log('clicked');
-  })
-}*/
-$('#slide').click(function(){
-  console.log('this');
-})
+$('.carousel[data-type="multi"] .item').each(function() {
+	var next = $(this).next();
+	if (!next.length) {
+		next = $(this).siblings(':first');
+	}
+	next.children(':first-child').clone().appendTo($(this));
+
+	for (var i = 0; i < 2; i++) {
+		next = next.next();
+		if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+
+		next.children(':first-child').clone().appendTo($(this));
+	}
+});
+
+
+
+var slides=document.querySelectorAll("#slide");
+slides.forEach(slide => {
+    slide.addEventListener('click', function(){
+      console.log(slide);
+      updatePhoto(slide);
+    });
+});
