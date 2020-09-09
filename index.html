@@ -1,285 +1,340 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Font Awesome-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>BuildYou.com</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+  <!-- bootstarp -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--glidejs-->
+  <link rel="stylesheet" href="./public/styles/glide.core.css">
+  <link rel="stylesheet" href="./public/styles/glide.theme.css">
+  
+  
+    <!-- AOS -->
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
 
-    <!--Google Fonts Link-->
-    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./public/styles/styles.css">
 
-    <!--Bootstrap Link-->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-
-
-    <!--CSS link-->
-    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="80">
+  <section id="section-1">
+    <nav class="navbar navbar-expand-lg fixed-top static-top" id="myScrollspy">
+ 
+      <!-- Toggler -->
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          
+        </span>
+      </button>
+   
+    
+      <!-- List Items -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-pills md" style="width: 100%;">
+          <li>
+            <a class="navbar-brand navbar-brand-inside" href="index.html">
+              <img src="./public/images/Crescent.svg" class="brand-pic" style="height:50px;">
+            </a>
+          </li>
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-auto" data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#about">About Us</a>
+          </li>
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#resources">Resources</a>
+          </li>
+          
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#stream" style="white-space: nowrap;">Stream</a>
+          </li>
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#sponsors" style="white-space: nowrap;">Sponsors</a>
+          </li>
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#contact" style="white-space: nowrap;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-    <section id="profile">
-        <div class="profile-main">
-            <div class="light-grey">
-                <div class="image-section">
-                    <div class="member-image-outer">
-                        <img src="assets/img/person.jpg" alt="" class="member-image">
-                    </div>
-                    <div class="member-text">
-                        <h1 class="barlow-medium">Donald Trump</h1>
-                        <h2 class="barlow-extramedium">UI / UX</h2>
+  </section>
 
-                    </div>
-                    <div class="sm-icons">
-                        <i class="fab fa-linkedin fa-3x sm-icon"></i>
-                        <i class="fab fa-github fa-3x sm-icon"></i>
-                        <i class="fab fa-envelope fa-3x sm-icon"></i>
-                    </div>
-                </div>
-                <div class="icon-section">
-                  
-                    <div class="tab-icon selected" id="about">
-                        <a>
-                            <i class="fas fa-user"></i>
-                        </a>
-                    </div>
-                    <div class="tab-icon" id="experience">
-                        <a>
-                            <i class="fas fa-briefcase"></i>
-                        </a>
-                    </div>
-                    <div class="tab-icon" id="achievements">
-                        <a>
-                            <i class="fas fa-trophy"></i>
-                        </a>
-                    </div>
-                    <div class="tab-icon" id="testimonials">
-                        <a>
-                            <i class="fas fa-quote-left"></i>
-                        </a>
-                    </div>
-                    <div class="tab-icon" id="gallery">
-                        <a>
-                            <i class="fas fa-images"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-section">
-                <div class="about show">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aut accusantium iure
-                        nostrum
-                        molestiae quasi veniam consequatur voluptate aspernatur suscipit atque! Dolores, totam unde.
-                        Architecto,
-                        officia. Iure, nulla. In animi commodi minus itaque voluptates a nobis ipsam accusantium fugit
-                        consectetur
-                        dignissimos officiis sapiente pariatur culpa sunt, vel, excepturi optio quidem!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aut accusantium iure
-                        nostrum
-                        molestiae quasi veniam consequatur voluptate aspernatur suscipit atque! Dolores, totam unde.
-                        Architecto,
-                        officia. Iure, nulla. In animi commodi minus itaque voluptates a nobis ipsam accusantium fugit
-                        consectetur
-                        dignissimos officiis sapiente pariatur culpa sunt, vel, excepturi optio quidem!</p>
-                </div>
-                <div class="testimonials">
-                    <h1>Testimonials</h1>
-                    <div class="para-line">
-                        <p>
-                            "Donald has been a disgrace of a president and has caused so many totally avoidable
-                            problems."
+  <section id="home">
+    <div class="container container1">
+      <div class="row">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div data-aos="fade-right" data-aos-duration="200">
+            <h1 class="heading-home">Build You</h1>
+          </div>
+          <p>BuildYou.com is a unique opportunity for all budding developers to code along, and learn how to build and
+            customize their own fully-working personal portfolio website from scratch.</p>
+          <a href="http://info.vit.ac.in/gravitas2020/gravitas_login.asp"><button class="btn btn-lg button">Register</button></a>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 img-container">
+          <img src="./public/images/Home.svg" alt="" class="img-fluid home-image" data-aos="fade-up" data-aos-duration="200">
+        </div>
+      </div>
+    </div>
+  </section>
 
-                        </p>
-                        <p class="text-right">
-                            - Hillary
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            "We love Donald trump so much, the mexican are taking our jobs away and he is trying his
-                            best to get 'em
-                            back!"
-                        </p>
-                        <p class="text-right">
-                            - Hulk Morgan
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            "Donald dipslays excellent team leadership skills and is totally fit to run a country and is
-                            not
-                            mentally unstable and din't have any twitter fights like a 5 year old."
-                        </p>
-                        <p class="text-right">
-                            - Ivanka Clinton
-                        </p>
-                    </div>
-                </div>
-                <div class="experience">
-                    <h1>Education</h1>
-                    <div class="para-line">
-                        <p>
-                            Higher Secondary School
-                        </p>
-                        <p>
-                            ABC PUblic School, New Delhi
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-8">
+          <h2 class="heading-about" data-aos="fade-left" data-aos-duration="200">About Us</h2>
+          <div class="d-flex d-lg-block justify-content-center">
+            <div class="hr-about"></div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="row about-row">
+        
+        <div class="col-lg-4 mb-5 mb-lg-0 d-none d-lg-block">
 
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            Btech. CSE
-                        </p>
-                        <p>
-                            VIT, Vellore
-                        </p>
-                    </div>
+          <div class="text-right img-container pr-md-5  pr-lg-0">
+            <img src="./public/images/DSC_Hologram.svg" alt="" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
+          </div>
+          <div class="text-left img-container pl-md-5 pl-lg-0">
+            <img src="./public/images/VIT_Hologram.svg" alt="" class="img-fluid  img-2" data-aos="fade-up" data-aos-duration="200">
+          </div>
 
-                    <h1>Experience</h1>
-                    <div class="para-line">
-                        <p>
-                            ABC Tech
-                        </p>
-                        <p>
-                            UI/UX Intern
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            DSC Website
-                        </p>
-                        <p>
-                            Design
-                        </p>
-                    </div>
-
-                </div>
-                <div class="achievements">
-                    <h1>Achievements</h1>
-                    <div class="para-line">
-                        <p>
-                            1st prize
-                        </p>
-                        <p>
-                            HackOff Winner
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            1st prize
-                        </p>
-                        <p>
-                            HackIt Winner
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            1st prize
-                        </p>
-                        <p>
-                            HackOut Winner
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            2nd prize
-                        </p>
-                        <p>
-                            HackContest runners up
-                        </p>
-                    </div>
-                    <div class="para-line">
-                        <p>
-                            Best UI Design
-                        </p>
-                        <p>
-                            HackLorem Ipsum winner
-                        </p>
-                    </div>
-
-                </div>
-                <div class="gallery">
-                    <div class="section-photo text-center">
-                        <img src="assets/img/p1.jpg" id="slide-main" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-centered">
-
-                        <div id="carousel" class="carousel slide" data-ride="none" data-type="multi">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="carousel-col">
-                                        <div class="block img-responsive">
-                                            <img src="assets/img/p1.jpg" id="slide" class="xyz">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="carousel-col">
-                                        <div class="block gimg-responsive">
-                                            <img src="assets/img/p2.jpg" id="slide" class="xyz">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="carousel-col">
-                                        <div class="block img-responsive">
-                                            <img src="assets/img/p3.jpg" id="slide" class="xyz">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="carousel-col">
-                                        <div class="block img-responsive">
-                                            <img src="assets/img/p4.jpg" id="slide" class="xyz">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="carousel-col">
-                                        <div class="block img-responsive">
-                                            <img src="assets/img/p5.jpg" id="slide" class="xyz">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <div class="left carousel-control">
-                                <a href="#carousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </div>
-                            <div class="right carousel-control">
-                                <a href="#carousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
         </div>
 
-    </section>
+
+        <div class="col-lg-8">
+          <div>
+            <div class="img-container d-lg-none mb-5">
+              <img src="./public/images/DSC_Hologram.svg" alt="" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
+            </div>
+            <p>DSC VIT, one of the most esteemed technical chapters in VIT, is a developers’ community powered by Google
+              Developers. It is a highly reputed non-profit organization aimed at empowering enthusiasts in developing
+              in
+              various technical domains and building solutions for real-world problems by working alongside a
+              well-established design and management team.</p>
+            <br>
+            <div class="img-container d-lg-none  mb-5">
+              <img src="./public/images/VIT_Hologram.svg" alt="" class="img-fluid  img-2" data-aos="fade-up" data-aos-duration="200">
+            </div>
+            <p>Vellore Institute of Technology (VIT), Vellore is one of the top-rated engineering colleges in India and
+              an
+              Institute of Eminence (IoE). The University works on ideas and executes tasks of different domains under
+              Student Clubs and Chapters. VIT University has a cosmopolitan atmosphere with 30,000+ students from
+              different corners of India and the globe. The motivated students at VIT are constantly exposed to
+              different
+              work atmospheres under the 100+ clubs and chapters working inside the campus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <div class="container container1">
+      <div>
+        <h1 class="heading-about" data-aos="fade-right" data-aos-duration="200">Resources</h1>
+        <div class="d-flex d-lg-block justify-content-center">
+          <div class="hr-about"></div>
+        </div>
+      </div>
+      <div class="row resources-row">
+        
+        <div class="col-lg-8 order-lg-1 order-2">
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu mattis cras posuere est lectus morbi massa
+            dapibus bibendum. Lacus bibendum neque erat tellus. Vehicula ultrices erat sit sed sed turpis eget. In
+            tellus quisque amet viverra. In fermentum tincidunt mus viverra enim. Massa massa sed diam commodo enim
+            parturient nulla. Interdum ut nibh cursus pretium ipsum vel facilisi viverra. Condimentum ac tortor faucibus
+            semper.
+          </p>
+          <p>Condimentum dui, duis elementum ut facilisi pellentesque enim. Orci morbi in quam pulvinar. Et, a
+            diam at cras at augue felis. Sed mattis aliquam quisque non. In est, tristique eu viverra vulputate
+            eleifend. Non gravida odio in scelerisque nisl, eleifend erat dui. Eget fames mattis ornare eleifend
+            interdum. Felis amet senectus venenatis mollis cras tellus, lacus velit. Justo lectus iaculis risus eget sed
+            enim.</p>
+        </div>
+        <div class="col-lg-4 text-center order-1 order-lg-2 mb-5 mb-lg-0 img-container">
+          <img src="./public/images/Resources_Hologram.svg" alt="" class="img-fluid img-3" data-aos="fade-up" data-aos-duration="200">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stream" >
+    <div class="container">
+      <div class="text-lg-right">
+        <h1 class="heading-about" data-aos="fade-left" data-aos-duration="200">Trailer</h1>
+        <div class="d-flex  justify-content-center justify-content-lg-end">
+          <div class="hr-about"></div>
+        </div>
+      </div>
+      
+        <iframe width="100%" height="435px;" src="https://www.youtube.com/embed/A9luzmLIzMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+    </div>
+  </section>
+
+  <section id="sponsors" >
+    <div class="container container1">
+      <div>
+        <h1 class="heading-about" data-aos="fade-right" data-aos-duration="200">Sponsors</h1>
+        <div class="d-flex d-lg-block justify-content-center">
+          <div class="hr-about"></div>
+        </div>
+      </div>
+      <div class="row resources-row">
+        <div class="col-lg-8 order-2 order-lg-1">
+          
+          <p>Our aim is to help every budding developer grow in their desired field and contribute to society with
+            something impactful and beneficent. We are grateful to all of our sponsors which helped us provide these
+            talented students a free of cost medium to hone their skills and make a name for themselves in the
+            constantly changing technology landscape.</p>
+          <p>We aim to motivate participants by appreciating their efforts with swags and goodies. We also aim to
+            conduct the event smoothly without any hassle and and the contribution of our sponsors helped us in
+            conducting this free event.</p>
+        </div>
+        <div class="col-lg-4 text-center mb-5 mb-lg-0 order-1 order-lg-2 img-container">
+          <img src="./public/images/Sponsors_Hologram.svg" alt="" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
+        </div>
+      </div>
+
+      <!-- carousel -->
+      
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img id="sponsor1" src="./public/images/Sponsors_images/sketch.png" class="img-fluid">
+    
+            </li>
+            <li class="glide__slide">
+              <img id="sponsor1" src="./public/images/Sponsors_images/github.png" class="img-fluid">
+    
+            </li>
+            <li class="glide__slide">
+              <img id="sponsor1" src="./public/images/Sponsors_images/intel.png" class="img-fluid">
+
+            </li>
+            <li class="glide__slide">
+              <img id="sponsor1" src="./public/images/Sponsors_images/jetbrains.png" class="img-fluid">
+
+            </li>
+            <li class="glide__slide">
+              <img id="sponsor1" src="./public/images/Sponsors_images/figma-1-logo.png" class="img-fluid">
+
+            </li>
+            
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="text-center d-flex flex-column">
+        <a href="sponsors.html"><button class="btn btn-lg button">Sponsor Us</button></a>
+        <a href=""><button class="btn btn-lg button">Download Brochure</button></a>
+      </div>
+    </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <script src="assets/js/script.js"></script>
+  </section>
+
+  <section id="contact">
+    <div class="container container-bottom">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-8">
+          <h1 class="heading-about" data-aos="fade-left" data-aos-duration="200">Contact Us</h1>
+          <div class="d-flex d-lg-block justify-content-center">
+            <div class="hr-about"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row resources-row">
+        <div class="col-lg-4 mb-5 mb-lg-0 img-container" data-aos="fade-up" data-aos-duration="200">
+          <img src="./public/images/Contact_Hologram.svg" class=" img-fluid img-2" alt="" data-aos="fade-up" data-aos-duration="200">
+        </div>
+        <div class="col-lg-8">
+          
+          <h2 class="mb-5 ">Socials</h2>
+          <div class="d-flex justify-content-between">
+            <a href="#"><img src="./public/images/socialmedia+contact_icons/instagram_pink.svg" class="social-image"
+                alt=""></a>
+            <a href="#"><img src="./public/images/socialmedia+contact_icons/facebook_pink.svg" class="social-image"
+                alt=""></a>
+            <a href="#"><img src="./public/images/socialmedia+contact_icons/linkedin_pink.svg" class="social-image"
+                alt=""></a>
+            <a href="#"><img src="./public/images/socialmedia+contact_icons/twitter_pink.svg" class="social-image"
+                alt=""></a>
+            <a href="#"><img src="./public/images/socialmedia+contact_icons/mail_pink.svg" class="social-image"
+                alt=""></a>
+          </div>
+         
+          <div class="row mt-5">
+            <div class="contact col-lg-6">
+              <h2>Angad Sharma</h2>
+              <h5>Community Lead</h5>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="">
+                <a href="mailto:angadsharma1016@gmail.com"><p class="email">angadsharma1016@gmail.com </p></a>
+
+              </div>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="">
+                <p> +91 9971673330 </p>
+              </div>
+            </div>
+            <div class="contact col-lg-6">
+              <h2>Meherdeep Thakur</h2>
+              <h5>Management Lead</h5>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="">  
+                <a href="mailto:meherdeept@gmail.com"><p class="email">meherdeept@gmail.com </p></a>
+              </div>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="">
+                <p> +91 8700865402</p>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- bootstarp js -->
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
