@@ -1,1 +1,0 @@
-# gkdhindsa.github.io
